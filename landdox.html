@@ -13,8 +13,29 @@
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
     <link href="/css/style.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
     <title>Becky Sable</title>
     <meta name="robots" content="noindex,follow">
+    <script type="text/javascript">
+        $(document).ready(function () {
+            setNavigation();
+        })
+        function setNavigation() {
+            var path = window.location.pathname;
+            path = path.replace(/\/$/, "");
+            path = decodeURIComponent(path);
+
+            $(".menu-item a").each(function () {
+                var href = $(this).attr('href');
+                if (path.indexOf(href) !== -1) {
+                    console.log(href);
+                    $(this).closest('.menu-item').addClass('current-menu-item');
+                }
+            });
+        }
+    </script>
+</head>
 
 <body>
     <div id="page" class="hfeed site">
@@ -33,7 +54,7 @@
                 <nav id="site-navigation" class="main-navigation" role="navigation">
                     <div class="menu-custom-menu-container">
                         <ul id="primary-menu" class="menu nav-menu" aria-expanded="false">
-                            <li id="menu-item-13" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-2 current_page_item menu-item-13"><a
+                            <li id="menu-item-13" class="menu-item menu-item-type-post_type menu-item-object-page page_item page-item-2 current_page_item menu-item-13"><a
                                     href="home.html">Home</a></li>
                             <li id="menu-item-14" class="menu-item menu-item-type-post_type_archive menu-item-object-portfolio menu-item-14"><a
                                     href="case-studies.html">Case Studies</a></li>
