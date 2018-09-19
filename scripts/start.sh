@@ -1,3 +1,2 @@
-node build-script.js
-cd build/
+node ./scripts/build-script.js
 python -m SimpleHTTPServer
