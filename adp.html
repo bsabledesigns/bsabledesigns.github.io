@@ -1,0 +1,169 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="profile" href="http://gmpg.org/xfn/11">
+    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Old+Standard+TT" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Katibeh" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/css/style.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+    <title>Becky Sable</title>
+    <meta name="robots" content="noindex,follow">
+    <script type="text/javascript">
+        $(document).ready(function () {
+            setNavigation();
+        })
+        function setNavigation() {
+            var path = window.location.pathname;
+            path = path.replace(/\/$/, "");
+            path = decodeURIComponent(path);
+
+            $(".menu-item a").each(function () {
+                var href = $(this).attr('href');
+                console.log(path,href)
+                if (path.indexOf(href) !== -1) {
+                    $(this).closest('.menu-item').addClass('current-menu-item');
+                }
+            });
+        }
+    </script>
+</head>
+
+<body>
+    <div id="page" class="hfeed site">
+        <a class="skip-link screen-reader-text" href="#content">Skip to content</a>
+
+        <header id="masthead" class="site-header" role="banner">
+            <div class="wrap">
+                <div class="site-branding">
+                    <h1 class="site-title"><a href="/" rel="home">Becky Sable</a></h1>
+                    <h2 class="site-description screen-reader-text"></h2>
+                </div><!-- site-branding -->
+                <button id="site-navigation-toggle" class="menu-toggle">
+                    <span class="menu-toggle-icon"></span>
+                    Primary Menu</button><!-- #site-navigation-menu-toggle -->
+
+                <nav id="site-navigation" class="main-navigation" role="navigation">
+                    <div class="menu-custom-menu-container">
+                        <ul id="primary-menu" class="menu nav-menu" aria-expanded="false">
+                            <li id="menu-item-13" class="menu-item menu-item-type-post_type menu-item-object-page page_item page-item-2 current_page_item menu-item-13"><a
+                                    href="home.html">Home</a></li>
+                            <li id="menu-item-14" class="menu-item menu-item-type-post_type_archive menu-item-object-portfolio menu-item-14"><a
+                                    href="case-studies.html">Case Studies</a></li>
+                            <li id="menu-item-20" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-20"><a
+                                    href="about.html">About</a></li>
+                            <li id="menu-item-104" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-104"><a
+                                    href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                </nav><!-- #site-navigation -->
+            </div><!-- .column -->
+            <div class="header-border"></div>
+        </header><!-- #masthead -->
+        <div id="main" class="site-main" role="main">
+    <div id="content" class="site-content">
+        <div id="primary" class="content-area">
+            <article id="post-9" class="post-9 portfolio type-portfolio status-publish has-post-thumbnail hentry">
+
+                <header class="entry-header">
+                    <h1 class="entry-title">Meetup</h1>
+                </header><!-- .entry-header -->
+
+                <div class="entry-content">
+                    <div class="portfolio-detail">
+                        <h1 class="text-center">Meetup</h1>
+                        <img class="alignnone size-full wp-image-285" src="/images/placeit-9.jpg" alt="placeit-9" width="2720"
+                            sizes="(max-width: 2720px) 100vw, 2720px">
+                        <section>
+                            <div class="row">
+                                <h2 class="col-md-4">The Company</h2>
+                                <p class="col-md-8"><span style="font-weight: 400;">Lorem ipsum dolor sit amet, pede
+                                        et, blandit vitae a dui. Voluptate ornare. A diam elit, magnis rhoncus, sociis
+                                        vitae,
+                                        morbi et massa, lorem morbi porta eu risus. Morbi at phasellus vestibulum vitae
+                                        mauris mollis, interdum integer magna
+                                        vestibulum a.</span></p>
+                            </div>
+                            <div class="row">
+                                <h2 class="col-md-4">
+                                    THE PROJECTS
+                                </h2>
+                                <p class="col-md-8"><span style="font-weight: 400;">
+                                        Lorem ipsum dolor sit amet, pede et, blandit vitae a dui. Voluptate ornare. A
+                                        diam elit, magnis rhoncus, sociis vitae,
+                                        morbi et massa, lorem morbi porta eu risus. Morbi at phasellus vestibulum vitae
+                                        mauris mollis, interdum integer magna
+                                        vestibulum a. Orci malesuada sed, deleniti sed arcu sed ac dictumst, mattis sit
+                                        eget proin, enim curabitur magna nisl
+                                        metus. Molestie et amet id pretium rutrum, libero magna, leo lacus et, rhoncus
+                                        donec tincidunt. Mattis bibendum tellus,
+                                        est et arcu arcu, tristique sit amet in wisi dui magna, felis rutrum metus
+                                        lectus nam. Posuere gravida elit, nulla
+                                        aliquam habitant fusce magna consectetuer.
+                                    </span></p>
+                            </div>
+                            <div class="row">
+                                <h2 class="col-md-4">My Role</h2>
+                                <p class="col-md-8">Research &amp; UX Design</p>
+                            </div>
+                        </section>
+                        <section><img class="alignnone size-full wp-image-341" src="/images/placeit-22-1.jpg" alt="placeit-22"
+                                width="2720" height="960" sizes="(max-width: 2720px) 100vw, 2720px"></section>
+                        <section>
+                            <div class="row">
+                                <h2 class="col-md-4">
+                                    GETTING TO A SOLUTION
+                                </h2>
+                                <p class="col-md-8">User<span style="font-weight: 400;">&nbsp;
+                                        Lorem ipsum dolor sit amet, pede et, blandit vitae a dui. Voluptate ornare. A
+                                        diam elit, magnis rhoncus, sociis vitae,
+                                        morbi et massa, lorem morbi porta eu risus. Morbi at phasellus vestibulum vitae
+                                        mauris mollis, interdum integer magna
+                                        vestibulum a. Orci malesuada sed, deleniti sed arcu sed ac dictumst, mattis sit
+                                        eget proin, enim curabitur magna nisl
+                                        metus. Molestie et amet id pretium rutrum, libero magna, leo lacus et, rhoncus
+                                        donec tincidunt. Mattis bibendum tellus,
+                                        est et arcu arcu, tristique sit amet in wisi dui magna.
+                                    </span></p>
+                            </div>
+                        </section>
+                    </div>
+                </div><!-- .entry-content -->
+
+            </article><!-- #post-## -->
+
+            <nav class="navigation pagination" role="navigation">
+                <h2 class="screen-reader-text">Portfolio navigation</h2>
+                <div class="nav-links"><a href="tx.html" class="prev page-numbers">Prev</a><a href="case-studies.html"
+                        class="all page-numbers"><span>All Projects</span></a><a href="landdox.html" class="next page-numbers">Next</a></div>
+            </nav>
+        </div><!-- #primary -->
+    </div><!-- #content -->
+</div>
+        <footer id="colophon" class="site-footer" role="contentinfo">
+            <div class="wrap">
+
+                <div class="site-info">
+                    <ul class="footer-list">
+                        <li><a href="mailto:rebsable@gmail.com"><i class="fa fa-envelope"></i></a>
+                        </li>
+                        <li><a href="tel:1-412-482-4854"><i class="fa fa-phone"></i></a></li>
+                        <li><a href="https://www.linkedin.com/in/becky-sable-562b935b/"><i class="fa fa-linkedin"></i></a></li>
+                        <li><a href="https://www.instagram.com/rebsable/"><i class="fa fa-instagram"></i></a>
+                        </li>
+                    </ul>
+                </div><!-- .site-info -->
+            </div><!-- .colum           n -->
+        </footer><!-- #colophon -->
+    </div>
+</body>
+
+</html>

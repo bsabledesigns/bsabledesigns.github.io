@@ -6,7 +6,12 @@ const pages = {
     "home.html",
     "case-studies.html"
   ],
-  "./components/case-studies/": ["meetup.html", "landdox.html", "tx.html"]
+  "./components/case-studies/": [
+    "meetup.html",
+    "landdox.html",
+    "tx.html",
+    "adp.html"
+  ]
 };
 const buildDir = "./build/";
 const index = String(fs.readFileSync("./components/template.html"));
@@ -20,6 +25,4 @@ let mainPages = Object.keys(pages).map(key => {
     fs.writeFileSync(page, replacedPage);
   });
 });
-fs.createReadStream("home.html").pipe(
-  fs.createWriteStream("index.html")
-);
+fs.createReadStream("home.html").pipe(fs.createWriteStream("index.html"));
