@@ -3191,3 +3191,10 @@ input[type='submit'].wpcf7-submit:focus {
 		max-width: 100%;
 	}
 }
+
+.pagination .page-numbers.next:before{
+	width: 0;
+    height: 0;
+    color: #585858;
+	content: ''!important;
+}
