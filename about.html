@@ -11,9 +11,8 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Katibeh" rel="stylesheet">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet">
     <link href="/css/style.css" rel="stylesheet">
-    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
         crossorigin="anonymous"></script>
     <title>Becky Sable</title>
@@ -27,11 +26,11 @@
             path = path.replace(/\/$/, "");
             path = decodeURIComponent(path);
 
-            $(".menu-item a").each(function () {
+            $(".nav-item a").each(function () {
                 var href = $(this).attr('href');
                 console.log(path, href)
                 if (path.indexOf(href) !== -1) {
-                    $(this).closest('.menu-item').addClass('current-menu-item');
+                    $(this).closest('.nav-item').addClass('active');
                 }
             });
         }
@@ -43,30 +42,22 @@
         <a class="skip-link screen-reader-text" href="#content">Skip to content</a>
 
         <header id="masthead" class="site-header" role="banner">
-            <div class="wrap">
-                <div class="site-branding">
-                    <h1 class="site-title"><a href="/" rel="home">Becky Sable</a></h1>
-                    <h2 class="site-description screen-reader-text"></h2>
-                </div><!-- site-branding -->
-                <button id="site-navigation-toggle" class="menu-toggle">
-                    <span class="menu-toggle-icon"></span>
-                    Primary Menu</button><!-- #site-navigation-menu-toggle -->
-
-                <nav id="site-navigation" class="main-navigation" role="navigation">
-                    <div class="menu-custom-menu-container">
-                        <ul id="primary-menu" class="menu nav-menu" aria-expanded="false">
-                            <li id="menu-item-13" class="menu-item menu-item-type-post_type menu-item-object-page page_item page-item-2 current_page_item menu-item-13"><a
-                                    href="home.html">Home</a></li>
-                            <li id="menu-item-14" class="menu-item menu-item-type-post_type_archive menu-item-object-portfolio menu-item-14"><a
-                                    href="case-studies.html">Case Studies</a></li>
-                            <li id="menu-item-20" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-20"><a
-                                    href="about.html">About</a></li>
-                            <li id="menu-item-104" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-104"><a
-                                    href="contact.html">Contact</a></li>
-                        </ul>
-                    </div>
-                </nav><!-- #site-navigation -->
-            </div><!-- .column -->
+            <nav class="navbar navbar-expand-sm navbar-light">
+                <h1 class="site-title"><a href="/" rel="home">Becky Sable</a></h1>
+                <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarsExample03"
+                    aria-controls="navbarsExample03" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse" id="navbarsExample03">
+                    <ul id="primary-menu" class="navbar-nav mr-auto">
+                        <li id="menu-item-13" class="nav-item"><a class="nav-link" href="home.html">Home</a></li>
+                        <li id="menu-item-14" class="nav-item"><a class="nav-link" href="case-studies.html">Case
+                                Studies</a></li>
+                        <li id="menu-item-20" class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                        <li id="menu-item-104" class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </nav>
             <div class="header-border"></div>
         </header><!-- #masthead -->
         <div id="main" class="site-main" role="main">
@@ -144,6 +135,15 @@
             </div><!-- .colum           n -->
         </footer><!-- #colophon -->
     </div>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" crossorigin="anonymous"></script>
 </body>
 
 </html>

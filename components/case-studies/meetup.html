@@ -12,7 +12,7 @@
                         <h1 class="text-center">Meetup</h1>
                         <img class="alignnone size-full wp-image-285" src="/images/placeit-9.jpg" alt="placeit-9" width="2720"
                             sizes="(max-width: 2720px) 100vw, 2720px">
-                        <section>
+                        <section class="container">
                             <div class="row">
                                 <h2 class="col-md-4">The Company</h2>
                                 <p class="col-md-8"><span style="font-weight: 400;">Meetup is a social events app used
@@ -31,9 +31,9 @@
                                 <p class="col-md-8">Research &amp; UX Design</p>
                             </div>
                         </section>
-                        <section><img class="alignnone size-full wp-image-341" src="/images/placeit-22-1.jpg" alt="placeit-22"
-                                width="2720" height="960" sizes="(max-width: 2720px) 100vw, 2720px"></section>
-                        <section>
+                        <section class="container"><img class="alignnone size-full wp-image-341" src="/images/placeit-22-1.jpg"
+                                alt="placeit-22" width="2720" height="960" sizes="(max-width: 2720px) 100vw, 2720px"></section>
+                        <section class="container">
                             <div class="row">
                                 <h2 class="col-md-4">Getting to a solution</h2>
                                 <p class="col-md-8">User<span style="font-weight: 400;">&nbsp;research and user
@@ -53,7 +53,7 @@
                                     I used their feedback to create an easier sign-up process.</p>
                             </div>
                         </section>
-                        <section>
+                        <section class="container">
                             <h2>User personas</h2>
                             <img class="alignnone size-full wp-image-397" src="/images/Artboard-meetup-personas.png"
                                 alt="artboard-meetup-personas" width="2046" height="367" sizes="(max-width: 2046px) 100vw, 2046px">
@@ -71,20 +71,23 @@
                 </div><!-- .entry-content -->
 
             </article><!-- #post-## -->
-
-            <nav class="navigation">
-                <h2 class="screen-reader-text">Portfolio navigation</h2>
-                <div class="nav-links">
-                    <a href="case-studies.html">
-                        <i class="fa fa-bars" aria-hidden="true"></i>
-                        <span>All Projects</span>
-                    </a>
-                    <a href="landdox.html">
-                        Next
-                        <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
-                    </a>
-                </div>
+            <nav aria-label="Page navigation example" class="container">
+                <ul class="pagination row justify-content-md-center">
+                    <li class="page-item col-md-4 col-sm-12"><a class="page-link" href="/tx.html">
+                            <i class="fa fa-long-arrow-left" aria-hidden="true"></i>
+                            Previous Case Study
+                        </a></li>
+                    <li class="page-item col-md-4 col-sm-12"><a class="page-link" href="/case-studies.html">
+                            <i class="fa fa-bars" aria-hidden="true"></i>
+                            All Projects
+                        </a></li>
+                    <li class="page-item col-md-4 col-sm-12"><a class="page-link" href="/landdox.html">
+                            Next Case Study
+                            <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+                        </a></li>
+                </ul>
             </nav>
+
         </div><!-- #primary -->
     </div><!-- #content -->
 </div>
