@@ -2644,6 +2644,8 @@ a.site-logo-link:before {
   list-style: none;
 }
 .footer-list li {
+  padding-right: 0.7em;
+  padding-left: 0.7em;
   line-height: 0px;
   display: inline-block;
   font-size: 1.5em;
