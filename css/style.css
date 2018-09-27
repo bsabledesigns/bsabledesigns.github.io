@@ -1266,7 +1266,7 @@ a.site-logo-link:before {
 .main-navigation a:active {
   color: #ff2441;
 }
-.current-menu-item a {
+.active a {
   color: #1ba39c !important;
   font-weight: bold;
 }
