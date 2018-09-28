@@ -632,12 +632,15 @@ input:-ms-input-placeholder {
   font-size: 2em;
   color: #1ba39c !important;
 }
-.about__section ul {
+.about__section p {
   list-style: none;
+  text-align: center;
 }
 .about__section ul > li {
+  display: block!important;
 }
 .about__section.about__grid ul > li {
+  text-align: center;
   margin-bottom: 3em;
 }
 .about__section__list--first li {
@@ -3215,4 +3218,8 @@ input[type="submit"].wpcf7-submit:focus {
 
 .card{
   margin: 1em!important;
+}
+
+.list--block li{
+  display: block!important;
 }
