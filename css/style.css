@@ -637,7 +637,7 @@ input:-ms-input-placeholder {
   text-align: center;
 }
 .about__section ul > li {
-  display: block!important;
+  display: block !important;
 }
 .about__section.about__grid ul > li {
   text-align: center;
@@ -1701,6 +1701,10 @@ a.site-logo-link:before {
 
 .nav-links.last-page > .all {
   display: block !important;
+}
+
+.nav-item {
+  margin-right: 2em;
 }
 
 .pagination .page-numbers.all {
@@ -3205,21 +3209,21 @@ input[type="submit"].wpcf7-submit:focus {
 }
 
 .top-1 {
-  margin-top: 1em!important;
+  margin-top: 1em !important;
 }
 
 .top-2 {
-  margin-top: 2em!important;
+  margin-top: 2em !important;
 }
 
 .top-3 {
-  margin-top: 3em!important;
+  margin-top: 3em !important;
 }
 
-.card{
-  margin: 1em!important;
+.card {
+  margin: 1em !important;
 }
 
-.list--block li{
-  display: block!important;
+.list--block li {
+  display: block !important;
 }
