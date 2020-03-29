@@ -622,8 +622,7 @@ input:-ms-input-placeholder {
   display: block;
 }
 .about__section {
-  margin-top: 2em;
-  border-bottom: 1px solid lightgray;
+  margin-top: 3em;
 }
 .about__section h1 {
   text-align: center;
