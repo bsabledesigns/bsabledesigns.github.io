@@ -10,7 +10,8 @@ const pages = {
     "meetup.html",
     "landdox.html",
     "tx.html",
-    "adp.html"
+    "adp.html",
+    "dicks.html"
   ]
 };
 const buildDir = "./build/";
