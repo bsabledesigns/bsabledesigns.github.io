@@ -1,151 +1,295 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="profile" href="http://gmpg.org/xfn/11">
-    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Old+Standard+TT" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Katibeh" rel="stylesheet">
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet">
-    <link href="/css/style.css" rel="stylesheet">
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-        crossorigin="anonymous"></script>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="profile" href="http://gmpg.org/xfn/11" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lobster"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Old+Standard+TT"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Katibeh"
+      rel="stylesheet"
+    />
+    <link
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link href="/css/style.css" rel="stylesheet" />
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"
+    ></script>
     <title>Becky Sable</title>
-    <meta name="robots" content="noindex,follow">
+    <meta name="robots" content="noindex,follow" />
     <script type="text/javascript">
-        $(document).ready(function () {
-            setNavigation();
-        })
-        function setNavigation() {
-            var path = window.location.pathname;
-            path = path.replace(/\/$/, "");
-            path = decodeURIComponent(path);
+      $(document).ready(function() {
+        setNavigation();
+        $("#slideshow > div:gt(0)").hide();
+        console.log($("#slideshow"));
+        setInterval(function() {
+          $("#slideshow > div:first")
+            .fadeOut(1000)
+            .next()
+            .fadeIn(1000)
+            .end()
+            .appendTo("#slideshow");
+        }, 3000);
+      });
+      function setNavigation() {
+        var path = window.location.pathname;
+        path = path.replace(/\/$/, "");
+        path = decodeURIComponent(path);
 
-            $(".nav-item a").each(function () {
-                var href = $(this).attr('href');
-                if (path === "") {
-                    return $(".nav-item--home").addClass("active");
-                }
-                if (path.indexOf(href) !== -1) {
-                    $(this).closest('.nav-item').addClass('active');
-                }
-            });
-        }
+        $(".nav-item a").each(function() {
+          var href = $(this).attr("href");
+          if (path === "") {
+            return $(".nav-item--home").addClass("active");
+          }
+          if (path.indexOf(href) !== -1) {
+            $(this)
+              .closest(".nav-item")
+              .addClass("active");
+          }
+        });
+      }
     </script>
-</head>
+  </head>
 
-<body>
+  <body>
     <div id="page" class="hfeed site">
-        <a class="skip-link screen-reader-text" href="#content">Skip to content</a>
+      <a class="skip-link screen-reader-text" href="#content"
+        >Skip to content</a
+      >
 
-        <header id="masthead" class="site-header" role="banner">
-            <nav class="navbar navbar-expand-sm navbar-light">
-                <h1 class="site-title"><a href="/" rel="home">Becky Sable</a></h1>
-                <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarsExample03"
-                    aria-controls="navbarsExample03" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="navbar-collapse collapse" id="navbarsExample03">
-                    <ul id="primary-menu" class="navbar-nav mr-auto">
-                        <li id="menu-item-13" class="nav-item nav-item--home"><a class="nav-link" href="home.html">Home</a></li>
-                        <!-- <li id="menu-item-14" class="nav-item"><a class="nav-link" href="case-studies.html">Case
+      <header id="masthead" class="site-header" role="banner">
+        <nav class="navbar navbar-expand-sm navbar-light">
+          <h1 class="site-title"><a href="/" rel="home">Becky Sable</a></h1>
+          <button
+            class="navbar-toggler collapsed"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarsExample03"
+            aria-controls="navbarsExample03"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="navbar-collapse collapse" id="navbarsExample03">
+            <ul id="primary-menu" class="navbar-nav mr-auto">
+              <li id="menu-item-13" class="nav-item nav-item--home">
+                <a class="nav-link" href="home.html">Home</a>
+              </li>
+              <!-- <li id="menu-item-14" class="nav-item"><a class="nav-link" href="case-studies.html">Case
                                 Studies</a></li> -->
-                        <li id="menu-item-20" class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-                        <li id="menu-item-104" class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-                    </ul>
-                </div>
-            </nav>
-            <div class="header-border"></div>
-        </header><!-- #masthead -->
-        <div id="main" class="site-main" role="main">
-    <div id="content" class="site-content">
-        <div id="primary" class="content-area">
-            <article id="post-16" class="post-16 page type-page status-publish hentry">
-                <header class="entry-header">
-                    <h1 class="entry-title">About</h1>
-                </header><!-- .entry-header -->
-                <div class="entry-content">
-                    <div class="about">
-                        <section class="about__section">
-                            <h1>6 things to know about me</h1>
-                            <div class="row col-md-offset-4 justify-content-md-center">
-                                <p class="col-md-12">I am an analytical thinker who works well with others.</p>
-                                <p class="col-md-12">I truly love UX Design.</p>
-                                <p class="col-md-12">I see the value of a team working&nbsp;cohesively.</p>
-                                <p class="col-md-12">Big or small, I’m always ready to plan an event.</p>
-                                <p class="col-md-12">My 95 year old grandma is my best friend.</p>
-                                <p class="col-md-12">I love to learn about different cultures.</p>
-                            </div>
-                        </section>
-                        <section class="about__section about__grid">
-                            <h1>Education</h1>
-                            <ul class="row col-md-offset-2 justify-content-md-center">
-                                <li class="col-md-6"><em>M.A. Conflict Analysis and Resolution</em><br>
-                                    George Mason University</li>
-                                <li class="col-md-6"><em>M.S. Mediterranean Studies</em><br>
-                                    University of Malta</li>
-                                <li class="col-md-6"><em>UX/UI Design Certificate</em><br>
-                                    Boulder Digital Arts</li>
-                                <li class="col-md-6"><em>B.A. African American Studies</em><br>
-                                    University of Massachusetts</li>
-                            </ul>
-                        </section>
-                        <section class="about__section about__grid">
-                            <h1>Everything UX</h1>
-                            <ul class="row col-md-offset-1">
-                                <li class="col-md-6"><em>Freelance UX Designer</em><br>
-                                    I provide clients with research, planning, strategy &amp; UX Design.</li>
-                                <li class="col-md-6"><em>Co-organizer of <a href="https://www.meetup.com/DenverUX/"
-                                            target="_blank">Denver UX Meetup</a>&nbsp;</em><br>
-                                    I create UX events for 900+ community members in Denver.</li>
-                                <li class="col-md-6"><em>Organizer of <a href="https://www.meetup.com/UX-Happy-Hour-in-Denver/"
-                                            target="_blank">UX Happy Hour in Denver&nbsp;</a></em><br>
-                                    I coordinate monthly events for UX Designers &amp; Researchers to network.</li>
-                                <li class="col-md-6"><em>Lead Event Coordinator for Creative Mornings</em><br>
-                                    I assist in the organization of monthly events for the creative community in
-                                    Denver.</li>
-                            </ul>
-                        </section>
-                    </div>
-                    <p style="text-align: center; margin-top: 1em;"><a class="btn btn-primary" href="/pdfs/becky-sable-resume.pdf"
-                            download="">Download My Resume</a></p>
-                </div><!-- .entry-content -->
-
-            </article><!-- #post-## -->
-
+              <li id="menu-item-20" class="nav-item">
+                <a class="nav-link" href="about.html">About</a>
+              </li>
+              <li id="menu-item-104" class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+        <div class="header-border"></div>
+      </header>
+      <!-- #masthead -->
+      <div id="main" class="site-main" role="main">
+  <div id="content" class="site-content">
+    <div id="primary" class="content-area">
+      <article
+        id="post-16"
+        class="post-16 page type-page status-publish hentry"
+      >
+        <header class="entry-header">
+          <h1 class="entry-title">About</h1>
+        </header>
+        <!-- .entry-header -->
+        <div class="entry-content">
+          <div class="about">
+            <div id="slideshow">
+              <div>
+                <img
+                  src="/images/about-1.jpg"
+                />
+              </div>
+              <div>
+                <img
+                  src="/images/about-2.jpg"
+                />
+              </div>
+              <div>
+                <img
+                  src="/images/about-3.jpg"
+                />
+              </div>
+              <div>
+                <img
+                  src="/images/about-4.jpg"
+                />
+              </div>
+              <div>
+                <img
+                  src="/images/about-5.jpg"
+                />
+              </div>
+              <div>
+                <img
+                  src="/images/about-6.jpg"
+                />
+              </div>
+              </div>
+            </div>
+            <section class="about__section">
+              <h1>6 things to know about me</h1>
+              <div class="row col-md-offset-4 justify-content-md-center">
+                <p class="col-md-12">
+                  I am an analytical thinker who works well with others.
+                </p>
+                <p class="col-md-12">I truly love UX Design.</p>
+                <p class="col-md-12">
+                  I see the value of a team working&nbsp;cohesively.
+                </p>
+                <p class="col-md-12">
+                  Big or small, I’m always ready to plan an event.
+                </p>
+                <p class="col-md-12">
+                  My 95 year old grandma is my best friend.
+                </p>
+                <p class="col-md-12">
+                  I love to learn about different cultures.
+                </p>
+              </div>
+            </section>
+            <section class="about__section about__grid">
+              <h1>Education</h1>
+              <ul class="row col-md-offset-2 justify-content-md-center">
+                <li class="col-md-6">
+                  <em>M.A. Conflict Analysis and Resolution</em><br />
+                  George Mason University
+                </li>
+                <li class="col-md-6">
+                  <em>M.S. Mediterranean Studies</em><br />
+                  University of Malta
+                </li>
+                <li class="col-md-6">
+                  <em>UX/UI Design Certificate</em><br />
+                  Boulder Digital Arts
+                </li>
+                <li class="col-md-6">
+                  <em>B.A. African American Studies</em><br />
+                  University of Massachusetts
+                </li>
+              </ul>
+            </section>
+            <section class="about__section about__grid">
+              <h1>Everything UX</h1>
+              <ul class="row col-md-offset-1">
+                <li class="col-md-6">
+                  <em>Freelance UX Designer</em><br />
+                  I provide clients with research, planning, strategy &amp; UX
+                  Design.
+                </li>
+                <li class="col-md-6">
+                  <em
+                    >Co-organizer of
+                    <a href="https://www.meetup.com/DenverUX/" target="_blank"
+                      >Denver UX Meetup</a
+                    >&nbsp;</em
+                  ><br />
+                  I create UX events for 900+ community members in Denver.
+                </li>
+                <li class="col-md-6">
+                  <em
+                    >Organizer of
+                    <a
+                      href="https://www.meetup.com/UX-Happy-Hour-in-Denver/"
+                      target="_blank"
+                      >UX Happy Hour in Denver&nbsp;</a
+                    ></em
+                  ><br />
+                  I coordinate monthly events for UX Designers &amp; Researchers
+                  to network.
+                </li>
+                <li class="col-md-6">
+                  <em>Lead Event Coordinator for Creative Mornings</em><br />
+                  I assist in the organization of monthly events for the
+                  creative community in Denver.
+                </li>
+              </ul>
+            </section>
+          </div>
+          <p style="text-align: center; margin-top: 1em;">
+            <a
+              class="btn btn-primary"
+              href="/pdfs/becky-sable-resume.pdf"
+              download=""
+              >Download My Resume</a
+            >
+          </p>
         </div>
-    </div><!-- #content -->
+        <!-- .entry-content -->
+      </article>
+      <!-- #post-## -->
+    </div>
+  </div>
+  <!-- #content -->
 </div>
-        <footer id="colophon" class="site-footer" role="contentinfo">
-            <div class="wrap">
 
-                <div class="site-info">
-                    <ul class="footer-list">
-                        <li><a href="mailto:rebsable@gmail.com"><i class="fa fa-envelope"></i></a>
-                        </li>
-                        <li><a href="tel:1-412-482-4854"><i class="fa fa-phone"></i></a></li>
-                        <li><a href="https://www.linkedin.com/in/becky-sable-562b935b/"><i class="fa fa-linkedin"></i></a></li>
-                        <li><a href="https://www.instagram.com/rebsable/"><i class="fa fa-instagram"></i></a>
-                        </li>
-                    </ul>
-                </div><!-- .site-info -->
-            </div><!-- .colum           n -->
-        </footer><!-- #colophon -->
+      <footer id="colophon" class="site-footer" role="contentinfo">
+        <div class="wrap">
+          <div class="site-info">
+            <ul class="footer-list">
+              <li>
+                <a href="mailto:rebsable@gmail.com"
+                  ><i class="fa fa-envelope"></i
+                ></a>
+              </li>
+              <li>
+                <a href="tel:1-412-482-4854"><i class="fa fa-phone"></i></a>
+              </li>
+              <li>
+                <a href="https://www.linkedin.com/in/becky-sable-562b935b/"
+                  ><i class="fa fa-linkedin"></i
+                ></a>
+              </li>
+              <li>
+                <a href="https://www.instagram.com/rebsable/"
+                  ><i class="fa fa-instagram"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+          <!-- .site-info -->
+        </div>
+        <!-- .colum           n -->
+      </footer>
+      <!-- #colophon -->
     </div>
 
-
     <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" crossorigin="anonymous"></script>
-</body>
-
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>

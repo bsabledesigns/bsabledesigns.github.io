@@ -621,6 +621,23 @@ input:-ms-input-placeholder {
   content: "";
   display: block;
 }
+#slideshow {
+  margin: 50px auto;
+  position: relative;
+  height: 400px;
+  box-shadow: #00000061 0px 3px 9px;
+  padding: 10px;
+}
+#slideshow > div {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  right: 10px;
+  bottom: 10px;
+}
+#slideshow > div > img {
+  margin: auto;
+}
 .about__section {
   margin-top: 3em;
 }
