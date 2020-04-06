@@ -622,11 +622,11 @@ input:-ms-input-placeholder {
   display: block;
 }
 #slideshow {
-  margin: 50px auto;
+  margin: 0px auto;
   position: relative;
-  height: 400px;
-  box-shadow: #00000061 0px 3px 9px;
   padding: 10px;
+  width: 50%;
+  height: 420px;
 }
 #slideshow > div {
   position: absolute;
@@ -636,7 +636,11 @@ input:-ms-input-placeholder {
   bottom: 10px;
 }
 #slideshow > div > img {
-  margin: auto;
+  width: 400px;
+  border-radius: 250px;
+  height: auto;
+  margin: 0 auto;
+  box-shadow: #00000061 0px 3px 9px;
 }
 .about__section {
   margin-top: 3em;
