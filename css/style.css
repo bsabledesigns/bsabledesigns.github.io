@@ -625,7 +625,6 @@ input:-ms-input-placeholder {
   margin: 0px auto;
   position: relative;
   padding: 10px;
-  width: 50%;
   height: 420px;
 }
 #slideshow > div {
@@ -637,7 +636,7 @@ input:-ms-input-placeholder {
 }
 #slideshow > div > img {
   width: 400px;
-  border-radius: 250px;
+  /* border-radius: 250px; */
   height: auto;
   margin: 0 auto;
   box-shadow: #00000061 0px 3px 9px;
