@@ -1133,8 +1133,8 @@ blockquote.alignright {
   max-width: 1128px;
   margin-right: auto;
   margin-left: auto;
-  padding-right: 5%;
-  padding-left: 5%;
+  /* padding-right: 5%; */
+  /* padding-left: 5%; */
   background-color: #fff;
 }
 .site-main {
@@ -2831,7 +2831,7 @@ input[type="submit"].wpcf7-submit:focus {
     margin-bottom: 2.9375em;
   }
 
-  .site {
+  .site-main {
     padding-right: 72px;
     padding-left: 72px;
   }
@@ -3240,6 +3240,26 @@ input[type="submit"].wpcf7-submit:focus {
 
 .card {
   margin: 1em !important;
+  margin-right: 3em !important;
+  margin-left: 2.1em !important;
+}
+
+.card:hover {
+  background-color: #1ba39c9e !important;
+  color: white !important;
+  cursor: pointer;
+}
+
+.card:hover .card-title {
+  color: white !important;
+}
+
+.card:hover img {
+  opacity: 0.5;
+}
+
+.card:hover a {
+  text-decoration: none;
 }
 
 .list--block li {
