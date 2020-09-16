@@ -615,7 +615,7 @@ input:-ms-input-placeholder {
 #page {
   min-height: 100%;
   /* equal to footer height */
-  margin-bottom: -142px;
+  /* margin-bottom: -142px; */
 }
 #page {
   content: "";
@@ -643,23 +643,25 @@ input:-ms-input-placeholder {
 }
 .about__section {
   margin-top: 3em;
+  padding-left: 1em;
+  padding-right: 1em;
 }
 .about__section h1 {
-  text-align: center;
+  /* text-align: center; */
   margin-bottom: 2em;
-  font-family: lobster;
+  /* font-family: lobster; */
   font-size: 2em;
-  color: #1ba39c !important;
+  /* color: #1ba39c !important; */
 }
 .about__section p {
   list-style: none;
-  text-align: center;
+  /* text-align: center; */
 }
 .about__section ul > li {
   display: block !important;
 }
 .about__section.about__grid ul > li {
-  text-align: center;
+  /* text-align: center; */
   margin-bottom: 3em;
 }
 .about__section__list--first li {
@@ -3242,8 +3244,13 @@ input[type="submit"].wpcf7-submit:focus {
   margin: 1em !important;
   margin-right: 3em !important;
   margin-left: 3em !important;
-  padding-left:0px;
-  padding-right:0px;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.side-margins {
+  margin-right: 3em !important;
+  margin-left: 2em !important;
 }
 
 .card:hover {

@@ -41,11 +41,11 @@
     <title>Becky Sable</title>
     <meta name="robots" content="noindex,follow" />
     <script type="text/javascript">
-      $(document).ready(function() {
+      $(document).ready(function () {
         setNavigation();
         $("#slideshow > div:gt(0)").hide();
         console.log($("#slideshow"));
-        setInterval(function() {
+        setInterval(function () {
           $("#slideshow > div:first")
             .fadeOut(1000)
             .next()
@@ -59,15 +59,13 @@
         path = path.replace(/\/$/, "");
         path = decodeURIComponent(path);
 
-        $(".nav-item a").each(function() {
+        $(".nav-item a").each(function () {
           var href = $(this).attr("href");
           if (path === "") {
             return $(".nav-item--home").addClass("active");
           }
           if (path.indexOf(href) !== -1) {
-            $(this)
-              .closest(".nav-item")
-              .addClass("active");
+            $(this).closest(".nav-item").addClass("active");
           }
         });
       }
@@ -99,8 +97,9 @@
               <li id="menu-item-13" class="nav-item nav-item--home">
                 <a class="nav-link" href="home.html">Home</a>
               </li>
-              <!-- <li id="menu-item-14" class="nav-item"><a class="nav-link" href="case-studies.html">Case
-                                Studies</a></li> -->
+              <li id="menu-item-14" class="nav-item">
+                <a class="nav-link" href="case-studies.html">My Work</a>
+              </li>
               <li id="menu-item-20" class="nav-item">
                 <a class="nav-link" href="about.html">About</a>
               </li>
@@ -113,7 +112,7 @@
         <div class="header-border"></div>
       </header>
       <!-- #masthead -->
-      <div id="main" class="site-main" role="main">
+      <div id="main" role="main">
   <div id="content" class="site-content">
     <div id="primary" class="content-area">
       <article
@@ -126,18 +125,18 @@
         <!-- .entry-header -->
         <div class="entry-content">
           <div class="about">
-            <div id="slideshow">
-              <div>
+            <div>
+              <!-- <div>
                 <img
                   src="/images/about-1.jpg"
                 />
-              </div>
+              </div> -->
               <div>
                 <img
                   src="/images/about-2.jpg"
                 />
               </div>
-              <div>
+              <!-- <div>
                 <img
                   src="/images/about-3.jpg"
                 />
@@ -156,46 +155,46 @@
                 <img
                   src="/images/about-6.jpg"
                 />
-              </div>
+              </div> -->
               </div>
             </div>
-            <section class="about__section">
+            <section class="about__section about__grid">
               <h1>6 things to know about me</h1>
-              <div class="row col-md-offset-4 justify-content-md-center">
-                <p class="col-md-12">
+              <ul class="row">
+                <li class="col-md-12">
                   I am an analytical thinker who works well with others.
-                </p>
-                <p class="col-md-12">I truly love UX Design.</p>
-                <p class="col-md-12">
+                </li>
+                <li class="col-md-12">I truly love UX Design.</li>
+                <li class="col-md-12">
                   I see the value of a team working&nbsp;cohesively.
-                </p>
-                <p class="col-md-12">
+                </li>
+                <li class="col-md-12">
                   Big or small, I’m always ready to plan an event.
-                </p>
-                <p class="col-md-12">
+                </li>
+                <li class="col-md-12">
                   My 95 year old grandma is my best friend.
-                </p>
-                <p class="col-md-12">
+                </li>
+                <li class="col-md-12">
                   I love to learn about different cultures.
-                </p>
-              </div>
+                </li>
+              </ul>
             </section>
             <section class="about__section about__grid">
               <h1>Education</h1>
-              <ul class="row col-md-offset-2 justify-content-md-center">
-                <li class="col-md-6">
+              <ul class="row">
+                <li class="col-md-12">
                   <em>M.A. Conflict Analysis and Resolution</em><br />
                   George Mason University
                 </li>
-                <li class="col-md-6">
+                <li class="col-md-12">
                   <em>M.S. Mediterranean Studies</em><br />
                   University of Malta
                 </li>
-                <li class="col-md-6">
+                <li class="col-md-12">
                   <em>UX/UI Design Certificate</em><br />
                   Boulder Digital Arts
                 </li>
-                <li class="col-md-6">
+                <li class="col-md-12">
                   <em>B.A. African American Studies</em><br />
                   University of Massachusetts
                 </li>
@@ -203,13 +202,13 @@
             </section>
             <section class="about__section about__grid">
               <h1>Everything UX</h1>
-              <ul class="row col-md-offset-1">
-                <li class="col-md-6">
+              <ul class="row">
+                <li class="col-md-12">
                   <em>Freelance UX Designer</em><br />
                   I provide clients with research, planning, strategy &amp; UX
                   Design.
                 </li>
-                <li class="col-md-6">
+                <li class="col-md-12">
                   <em
                     >Co-organizer of
                     <a href="https://www.meetup.com/DenverUX/" target="_blank"
@@ -218,7 +217,7 @@
                   ><br />
                   I create UX events for 900+ community members in Denver.
                 </li>
-                <li class="col-md-6">
+                <li class="col-md-12">
                   <em
                     >Organizer of
                     <a
@@ -230,7 +229,7 @@
                   I coordinate monthly events for UX Designers &amp; Researchers
                   to network.
                 </li>
-                <li class="col-md-6">
+                <li class="col-md-12">
                   <em>Lead Event Coordinator for Creative Mornings</em><br />
                   I assist in the organization of monthly events for the
                   creative community in Denver.
