@@ -2834,8 +2834,8 @@ input[type="submit"].wpcf7-submit:focus {
   }
 
   .site-main {
-    padding-right: 72px;
-    padding-left: 72px;
+    /* padding-right: 72px; */
+    /* padding-left: 72px; */
   }
 
   .site-header {

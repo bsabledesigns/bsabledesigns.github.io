@@ -44,7 +44,11 @@
       $(document).ready(function () {
         setNavigation();
         $("#slideshow > div:gt(0)").hide();
-        console.log($("#slideshow"));
+        if (window.location.hash) {
+          document
+            .getElementById(window.location.hash.replace("#", ""))
+            .scrollIntoView();
+        }
         setInterval(function () {
           $("#slideshow > div:first")
             .fadeOut(1000)
@@ -58,7 +62,6 @@
         var path = window.location.pathname;
         path = path.replace(/\/$/, "");
         path = decodeURIComponent(path);
-
         $(".nav-item a").each(function () {
           var href = $(this).attr("href");
           if (path === "") {
@@ -98,7 +101,7 @@
                 <a class="nav-link" href="home.html">Home</a>
               </li>
               <li id="menu-item-14" class="nav-item">
-                <a class="nav-link" href="case-studies.html">My Work</a>
+                <a class="nav-link" href="home.html#work-container">My Work</a>
               </li>
               <li id="menu-item-20" class="nav-item">
                 <a class="nav-link" href="about.html">About</a>
@@ -127,7 +130,7 @@
                         alt="cropped-becky-website-final" width="3253" height="1257" sizes="(max-width: 3253px) 100vw, 3253px">
                     <p style="text-align: center;">
                     </p>
-                    <div id="container" 
+                    <div id="work-container" 
                     style="background-color:#d3d3d370"
                     class="site-content">
                     <div style="margin-top:3em">
