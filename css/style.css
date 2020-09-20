@@ -648,7 +648,7 @@ input:-ms-input-placeholder {
 }
 .about__section h1 {
   /* text-align: center; */
-  margin-bottom: 2em;
+  margin-bottom: 1em;
   /* font-family: lobster; */
   font-size: 2em;
   /* color: #1ba39c !important; */
@@ -662,7 +662,8 @@ input:-ms-input-placeholder {
 }
 .about__section.about__grid ul > li {
   /* text-align: center; */
-  margin-bottom: 3em;
+  margin-bottom: 1em;
+  padding-left: 0px !important;
 }
 .about__section__list--first li {
   padding-bottom: 1em;
